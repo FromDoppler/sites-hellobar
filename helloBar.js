@@ -3,23 +3,21 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 
-    createHelloBar();
-
-    function generateAnchorTag(url) {
+    const generateAnchorTag = (url) => {
         const anchorTag = document.createElement("a");
         anchorTag.setAttribute("target", "_blank");
         anchorTag.href = url;
         return anchorTag;
     }
 
-    function generateDivTag() {
+    const generateDivTag = () => {
         const div = document.createElement("div");
         div.classList.add("hello-bar", "hello-bar-emms");
         div.id = "hello-bar";
         return div;
     }
 
-    function generateImgTag(src, alt, title) {
+    const generateImgTag = (src, alt, title) => {
         const img = document.createElement("img");
         img.src = src;
         if (alt != null) img.alt = alt;
@@ -28,20 +26,20 @@ document.addEventListener("DOMContentLoaded", () => {
         return img;
     }
 
-    function generatePTag(pContent) {
+    const generatePTag = (pContent) => {
         const p = document.createElement("p");
         p.innerHTML = pContent;
         return p;
     }
 
-    function generateButtonTag(buttonContent) {
+    const generateButtonTag = (buttonContent) => {
         const btn = document.createElement("button");
         btn.classList.add("hb-button", "long");
         btn.innerHTML = buttonContent;
         return btn;
     }
 
-    function createHelloBarStyle() {
+    const createHelloBarStyle = () => {
         if (!document.getElementById("helloBarStyle")) {
             const link = document.createElement("link");
             link.id = "helloBarStyle";
@@ -51,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function createHelloBar() {
+    const createHelloBar = () => {
         const a = generateAnchorTag("https://goemms.com/?origin=hellobar");
         const div = generateDivTag();
         const img = generateImgTag("https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/asset-demoday.png", "Demo Day", "Demo Day");
@@ -65,6 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
         a.appendChild(div);
         header.insertBefore(a, header.firstChild);
     }
+
+    createHelloBar();
 
 });
 
