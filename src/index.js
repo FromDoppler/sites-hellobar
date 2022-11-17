@@ -1,5 +1,5 @@
 
-
+import "./helloBar.css";
 
 
 const generateAnchorTag = (url) => {
@@ -38,16 +38,6 @@ const generateButtonTag = (buttonContent) => {
     return btn;
 }
 
-const createHelloBarStyle = () => {
-    if (!document.getElementById("helloBarStyle")) {
-        const link = document.createElement("link");
-        link.id = "helloBarStyle";
-        link.rel = "stylesheet";
-        link.href = "https://fromdoppler.github.io/sites-helloBar/helloBar.css";
-        document.head.appendChild(link);
-    }
-}
-
 const createHelloBar = () => {
     const a = generateAnchorTag("https://goemms.com/?origin=hellobar");
     const div = generateDivTag();
@@ -55,7 +45,6 @@ const createHelloBar = () => {
     const p = generatePTag(`EVENTO ONLINE: Llegó <span>#EMMS2022</span>, ¡el más esperado por la comunidad del Marketing! </p>`);
     const btn = generateButtonTag("ASEGURA TU CUPO GRATIS");
     const header = document.querySelector("header");
-    createHelloBarStyle();
     div.appendChild(img);
     div.appendChild(p);
     div.appendChild(btn);
