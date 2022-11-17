@@ -43,7 +43,7 @@ pipeline {
         }
         stage('Publish in our CDN') {
             environment {
-                PKG_NAME = "doppler-sites-helloBar"
+                PKG_NAME = "doppler-sites-hellobar"
             }
             stages {
                 stage('Publish pre-release packages from pull request') {

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pkgName="doppler-sites-helloBar"
+pkgName="doppler-sites-hellobar"
 cdnBaseUrl="https://cdn.fromdoppler.com"
 commit=""
 name=""
