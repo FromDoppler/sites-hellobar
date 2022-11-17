@@ -129,11 +129,11 @@ docker run --rm \
   "${tag}" \
   /bin/sh -c "\
     sh ./prepare.sh \
-      --commit=\"${commit}\" \
-      --name=\"${name}\" \
-      --version=\"${version}\" \
-      --pre-version-suffix=\"${versionPre}\" \
+    --commit=\"${commit}\" \
+    --name=\"${name}\" \
+    --version=\"${version}\" \
+    --pre-version-suffix=\"${versionPre}\" \
     && sh ./upload.sh \
-      --port=\"${CDN_SFTP_PORT}\" \
-      --destination=\"${CDN_SFTP_USERNAME}@${CDN_SFTP_HOSTNAME}:/${CDN_SFTP_BASE}/${pkgName}/\" \
+    --port=\"${CDN_SFTP_PORT}\" \
+    --destination=\"${CDN_SFTP_USERNAME}@${CDN_SFTP_HOSTNAME}:/${CDN_SFTP_BASE}/${pkgName}/\" \
     "

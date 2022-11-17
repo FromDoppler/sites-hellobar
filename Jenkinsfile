@@ -52,11 +52,11 @@ pipeline {
                     }
                     steps {
                         sh '''
-                          sh build-n-publish.sh \
+                        sh build-n-publish.sh \
                             --package=${PKG_NAME} \
                             --commit=${GIT_COMMIT} \
                             --name=pr-${CHANGE_ID}
-                          '''
+                        '''
                     }
                 }
                 stage('Publish pre-release packages from main') {
@@ -65,11 +65,11 @@ pipeline {
                     }
                     steps {
                         sh '''
-                          sh build-n-publish.sh \
+                        sh build-n-publish.sh \
                             --package=${PKG_NAME} \
                             --commit=${GIT_COMMIT} \
                             --name=main
-                          '''
+                        '''
                     }
                 }
                 stage('Publish pre-release packages from INT') {
@@ -78,11 +78,11 @@ pipeline {
                     }
                     steps {
                         sh '''
-                          sh build-n-publish.sh \
+                        sh build-n-publish.sh \
                             --package=${PKG_NAME} \
                             --commit=${GIT_COMMIT} \
                             --name=INT
-                          '''
+                        '''
                     }
                 }
                 stage('Publish final version images') {
@@ -93,11 +93,11 @@ pipeline {
                     }
                     steps {
                         sh '''
-                          sh build-n-publish.sh \
+                        sh build-n-publish.sh \
                             --package=${PKG_NAME} \
                             --commit=${GIT_COMMIT} \
                             --version=${TAG_NAME}
-                          '''
+                        '''
                     }
                 }
             }
