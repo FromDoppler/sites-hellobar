@@ -1,4 +1,4 @@
-import "./helloBar.css";
+import "./hellobar.css";
 
 const generateAnchorTag = (url) => {
   const anchorTag = document.createElement("a");
