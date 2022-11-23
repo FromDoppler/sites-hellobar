@@ -53,7 +53,9 @@ const createHelloBar = () => {
   div.appendChild(p);
   div.appendChild(btn);
   a.appendChild(div);
-  header.insertBefore(a, header.firstChild);
+  if (header) header.insertBefore(a, header.firstChild);
 };
 
 createHelloBar();
+
+export { createHelloBar };
