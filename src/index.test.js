@@ -30,3 +30,9 @@ describe("Test in index.js", () => {
     ).toBeTruthy();
   });
 });
+
+describe("Test in index.js without having a header", () => {
+  test("The execution of the function must not fail even if there is no header tag", () => {
+    createHelloBar();
+  });
+});
