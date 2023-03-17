@@ -97,6 +97,13 @@ a {
   color: #302100;
 }
 
+.hello-bar p span {
+  font-size: 13px;
+  font-weight: 700;
+  display: unset;
+  color: #ffffff;
+}
+
 .home section.section--top {
   margin-top: 50px;
 }
