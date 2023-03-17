@@ -37,7 +37,9 @@ const generateButtonTag = (buttonContent) => {
 };
 
 const createHelloBar = () => {
-  const a = generateAnchorTag("https://goemms.com/?origin=hellobar");
+  const a = generateAnchorTag(
+    "http://goemms.com/ecommerce.php/?origin=hellobar"
+  );
   const div = generateDivTag();
   const img = generateImgTag(
     "https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/asset-demoday.png",
@@ -45,7 +47,7 @@ const createHelloBar = () => {
     "Demo Day"
   );
   const p = generatePTag(
-    `EVENTO ONLINE: Llegó <span>#EMMS2022</span>, ¡el más esperado por la comunidad del Marketing! </p>`
+    `<strong>EMMS E-COMMERCE</strong>: llega una nueva edición del evento más esperado por la comunidad <br> del Marketing, exclusiva para Tiendas Online.`
   );
   const btn = generateButtonTag("ASEGURA TU CUPO GRATIS");
   const header = document.querySelector("header");
