@@ -97,7 +97,7 @@ a {
   color: #302100;
 }
 
-.hello-bar p span {
+.hello-bar p strong {
   font-size: 13px;
   font-weight: 700;
   display: unset;
