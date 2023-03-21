@@ -38,7 +38,7 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    "http://goemms.com/ecommerce.php/?origin=hellobar"
+    "http://goemms.com/ecommerce.php?origin=hellobar"
   );
   const div = generateDivTag();
   const img = generateImgTag(
