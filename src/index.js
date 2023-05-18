@@ -45,7 +45,8 @@ const createHelloBar = () => {
     "Demo Day"
   );
   const p = generatePTag(
-    `<strong>Revive las conferencias del EMMS E-commerce</strong>: SEO, UX, CRO, Casos de Éxito, estrategias de venta, IA y Chat GPT.`
+    `<strong>Revive las conferencias del EMMS E-commerce</strong>: SEO, UX, CRO, Casos de Éxito,
+      estrategias de venta, IA y Chat GPT.`
   );
   const btn = generateButtonTag("ACCEDE AHORA");
   const header = document.querySelector("header");
