@@ -45,9 +45,9 @@ const createHelloBar = () => {
     "Demo Day"
   );
   const p = generatePTag(
-    `<strong>EMMS E-COMMERCE</strong>: nueva edición del evento más esperado, exclusiva para Tiendas Online.`
+    `<strong>Revive las conferencias del EMMS E-commerce</strong>: SEO, UX, CRO, Casos de Éxito, estrategias de venta, IA y Chat GPT.`
   );
-  const btn = generateButtonTag("ASEGURA TU CUPO GRATIS");
+  const btn = generateButtonTag("ACCEDE AHORA");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
