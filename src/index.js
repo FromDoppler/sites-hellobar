@@ -37,7 +37,15 @@ const generateButtonTag = (buttonContent) => {
 };
 
 const createHelloBar = () => {
-  const a = generateAnchorTag("http://goemms.com/ecommerce?origin=hellobarapp");
+  const a = generateAnchorTag(
+    `http://app.fromdoppler.com/?origin=hellobar-junio#/ingresa?redirect=/ControlPanel
+    /AccountPreferences/UpgradeAccount?Plan=monthly&PromoCode=HELLOB4R`
+  );
+  const aLegal = generateAnchorTag(
+    "https://comercial.fromdoppler.com/landing-descuento-hellobar/"
+  );
+  aLegal.innerHTML = "*Lee los legales aquí";
+  aLegal.classList.add("legal");
   const div = generateDivTag();
   const img = generateImgTag(
     "https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/asset-demoday.png",
@@ -45,14 +53,15 @@ const createHelloBar = () => {
     "Demo Day"
   );
   const p = generatePTag(
-    `<strong>Revive las conferencias del EMMS E-commerce</strong>: SEO, UX, CRO, Casos de Éxito,
-      estrategias de venta, IA y Chat GPT.`
+    `🎉¡Solo por hoy! <strong>2x1</strong> en Planes por Créditos y <strong>20%OFF</strong>
+      en Planes por Contactos. | <strong>Código: HELLOB4R</strong>`
   );
-  const btn = generateButtonTag("ACCEDE AHORA");
+  const btn = generateButtonTag("APLÍCALO AHORA");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
   div.appendChild(btn);
+  div.appendChild(aLegal);
   a.appendChild(div);
   if (header) header.insertBefore(a, header.firstChild);
 };
