@@ -38,7 +38,7 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    `https://app.fromdoppler.com/?utm_source=direct&origin=hellobar#/ingresa?redirect=/ControlPanel/
+    `https://app.fromdoppler.com/?origin=hellobar#/ingresa?redirect=/ControlPanel/
 		 AccountPreferences/UpgradeAccount?Plan=monthly&PromoCode=HELLOB4R`
   );
   const aLegal = generateAnchorTag(
