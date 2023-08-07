@@ -39,7 +39,7 @@ const generateButtonTag = (buttonContent) => {
 const createHelloBar = () => {
   const a = generateAnchorTag(
     `http://app.fromdoppler.com/?origin=hellobar-junio#/ingresa?redirect=/ControlPanel
-    /AccountPreferences/UpgradeAccount?Plan=monthly&PromoCode=PLAN3S`
+    /AccountPreferences/UpgradeAccount?Plan=monthly&PromoCode=HELLOB4R`
   );
   const aLegal = generateAnchorTag(
     "https://comercial.fromdoppler.com/landing-descuento-hellobar/"
@@ -54,7 +54,7 @@ const createHelloBar = () => {
   );
   const p = generatePTag(
     `🎉¡Solo por hoy! <strong>2x1</strong> en Planes por Créditos y <strong>20%OFF</strong>
-      en Planes por Contactos. | <strong>Código: PLAN3S</strong>`
+      en Planes por Contactos. | <strong>Código: HELLOB4R</strong>`
   );
   const btn = generateButtonTag("APLÍCALO AHORA");
   const header = document.querySelector("header");
