@@ -39,7 +39,7 @@ const generateButtonTag = (buttonContent) => {
 const createHelloBar = () => {
   const a = generateAnchorTag(
     `http://app.fromdoppler.com/?origin=hellobar-junio#/ingresa?redirect=/ControlPanel
-    /AccountPreferences/UpgradeAccount?Plan=monthly&PromoCode=HELLOB4R`
+/AccountPreferences/UpgradeAccount?Plan=monthly&PromoCode=HELLOB4R`
   );
   const aLegal = generateAnchorTag(
     "https://comercial.fromdoppler.com/landing-descuento-hellobar/"
