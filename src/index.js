@@ -56,7 +56,7 @@ const createHelloBar = () => {
     `🎉¡Solo por hoy! <strong>2x1</strong> en Planes por Créditos y <strong>20%OFF</strong>
       en Planes por Contactos. | <strong>Código: HELLOB4R</strong>`
   );
-  const btn = generateButtonTag("APLÍCALO MAÑANA");
+  const btn = generateButtonTag("APLÍCALO AHORA");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
