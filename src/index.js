@@ -38,14 +38,9 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    `http://app.fromdoppler.com/?origin=hellobar-junio#/ingresa?redirect=/ControlPanel
-/AccountPreferences/UpgradeAccount?Plan=monthly&PromoCode=HELLOB4R`
+    `https://academy.fromdoppler.com/cursos/curso-email-marketing/lessons/que-es-la-certificacion-en
+-email-marketing/?utm_source=fromdoppler&utm_medium=hellobar&utm_campaign=cw-nuevocurso-leads-sep23`
   );
-  const aLegal = generateAnchorTag(
-    "https://comercial.fromdoppler.com/landing-descuento-hellobar/"
-  );
-  aLegal.innerHTML = "*Lee los legales aquí";
-  aLegal.classList.add("legal");
   const div = generateDivTag();
   const img = generateImgTag(
     "https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/asset-demoday.png",
@@ -53,15 +48,13 @@ const createHelloBar = () => {
     "Demo Day"
   );
   const p = generatePTag(
-    `🎉¡Solo por hoy! <strong>2x1</strong> en Planes por Créditos y <strong>20%OFF</strong>
-      en Planes por Contactos. | <strong>Código: HELLOB4R</strong>`
+    `Nuevo curso | Certifícate en Email Marketing de forma online y gratuita. ¡Empieza ahora!`
   );
-  const btn = generateButtonTag("APLÍCALO AHORA");
+  const btn = generateButtonTag("COMIENZA YA");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
   div.appendChild(btn);
-  div.appendChild(aLegal);
   a.appendChild(div);
   if (header) header.insertBefore(a, header.firstChild);
 };
