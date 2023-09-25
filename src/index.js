@@ -38,8 +38,8 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    `https://academy.fromdoppler.com/cursos/curso-email-marketing/lessons/que-es-la-certificacion-en
--email-marketing/?utm_source=fromdoppler&utm_medium=hellobar&utm_campaign=cw-nuevocurso-leads-sep23`
+    `https://goemms.com/digital-trends?utm_source=fromdoppler&utm_medium=hellobar&utm_campaign
+=am-emmsdt-registros-sep23`
   );
   const div = generateDivTag();
   const img = generateImgTag(
@@ -48,9 +48,10 @@ const createHelloBar = () => {
     "Demo Day"
   );
   const p = generatePTag(
-    `Nuevo curso | Certifícate en Email Marketing de forma online y gratuita. ¡Empieza ahora!`
+    `[Pre-inscripción exclusiva] EMMS Digital Trends | Llega el mayor evento de Marketing Digital:
+conferencias, workshops y networking.`
   );
-  const btn = generateButtonTag("COMIENZA YA");
+  const btn = generateButtonTag("RESERVA TU LUGAR GRATIS");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
