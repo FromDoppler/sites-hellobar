@@ -38,8 +38,8 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    `https://goemms.com/digital-trends?utm_source=fromdoppler&utm_medium=hellobar&utm_campaign
-=am-emmsdt-registros-sep23`
+    `https://goemms.com/digital-trends?utm_source=fromdoppler&utm_medium=hellobar&utm_campaign=cw-emmsdt-
+invitacion-nov23`
   );
   const div = generateDivTag();
   const img = generateImgTag(
@@ -48,10 +48,10 @@ const createHelloBar = () => {
     "Demo Day"
   );
   const p = generatePTag(
-    `[Pre-inscripción exclusiva] EMMS Digital Trends | Llega el mayor evento de Marketing Digital:
-conferencias, workshops y networking.`
+    `<strong>[EMMS DT] Cuenta regresiva ⏳</strong>| Referentes de Google, Youtube, Meta y Spotify
+  te estarán contando sus estrategias más efectivas para escalar tu negocio con éxito.`
   );
-  const btn = generateButtonTag("RESERVA TU LUGAR GRATIS");
+  const btn = generateButtonTag("RESERVA GRATIS TU LUGAR");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
