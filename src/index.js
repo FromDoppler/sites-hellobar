@@ -48,7 +48,7 @@ invitacion-nov23`
     "Demo Day"
   );
   const p = generatePTag(
-    `<strong>¡El EMMS Digital Trends ya comenzó!</strong>| Referentes de Google, Youtube, Meta y Spotify
+    `<strong>¡El EMMS Digital Trends ya comenzó!</strong> Referentes de Google, Youtube, Meta y Spotify
   te estarán contando sus estrategias más efectivas para escalar tu negocio con éxito.`
   );
   const btn = generateButtonTag("RESERVA GRATIS TU LUGAR");
