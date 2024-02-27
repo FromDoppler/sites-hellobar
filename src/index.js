@@ -38,8 +38,7 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    `https://goemms.com/digital-trends?utm_source=fromdoppler&utm_medium=hellobar&utm_campaign=cw-emmsdt-
-invitacion-nov23`
+    `https://goemms.com/ecommerce?origin=hellobarapp`
   );
   const div = generateDivTag();
   const img = generateImgTag(
@@ -48,10 +47,10 @@ invitacion-nov23`
     "Demo Day"
   );
   const p = generatePTag(
-    `<strong>¡El EMMS Digital Trends ya comenzó!</strong> Referentes de Google, Youtube, Meta y Spotify
-  te estarán contando sus estrategias más efectivas para escalar tu negocio con éxito.`
+    `<strong>EMMS E-Commerce 2024 🚀</strong> | Descubre las últimas tendencias y las mejores
+  estrategias para atraer nuevos clientes y aumentar la facturación de tu Tienda Online.`
   );
-  const btn = generateButtonTag("RESERVA GRATIS TU LUGAR");
+  const btn = generateButtonTag("REGÍSTRATE GRATIS");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
