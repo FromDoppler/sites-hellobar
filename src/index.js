@@ -47,8 +47,7 @@ const createHelloBar = () => {
     "Demo Day"
   );
   const p = generatePTag(
-    `<strong>¡Últimos días para reservar tu lugar!</strong> | Descubre por qué el EMMS E-commerce es el
-    lugar ideal para aprender cómo escalar tu tienda online junto a los líderes del sector.`
+    `<strong>EMMS E-commerce 2024 | 🚨 ¡El evento ya empezó!`
   );
   const btn = generateButtonTag("SÚMATE GRATIS");
   const header = document.querySelector("header");
