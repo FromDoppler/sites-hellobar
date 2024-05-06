@@ -47,9 +47,10 @@ const createHelloBar = () => {
     "Demo Day"
   );
   const p = generatePTag(
-    `<strong>EMMS E-commerce 2024 | 🚨 ¡El evento ya empezó!`
+    `<strong>Revive las conferencias del EMMS E-commerce:</strong> Growth Marketing, Meta Ads, Organic
+    Social, marketing de escasez ¡y más!`
   );
-  const btn = generateButtonTag("SÚMATE GRATIS");
+  const btn = generateButtonTag("ACCEDE AHORA");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
