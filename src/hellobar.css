@@ -197,3 +197,28 @@ a {
 .hello-bar-emms .hb-button.long {
   width: 210px;
 }
+
+/* Academy Emms */
+
+.hello-bar-academy {
+  background-color: #6f4f7a;
+  border-bottom: 4px solid #b58fc1;
+}
+
+.hello-bar-academy img.hb-logo {
+  display: none;
+}
+
+.hello-bar-academy p,
+.hello-bar-academy p span {
+  color: #fff;
+}
+
+.hello-bar-academy .hb-button {
+  background: #6f4f7a;
+  font-size: 12px;
+}
+
+.hello-bar-academy .hb-button.long {
+  width: 210px;
+}
