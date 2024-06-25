@@ -9,7 +9,7 @@ const generateAnchorTag = (url) => {
 
 const generateDivTag = () => {
   const div = document.createElement("div");
-  div.classList.add("hello-bar", "hello-bar-emms");
+  div.classList.add("hello-bar", "hello-bar-academy");
   div.id = "hello-bar";
   return div;
 };
@@ -38,7 +38,7 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    `https://goemms.com/ecommerce?origin=hellobarapp`
+    `https://academy.fromdoppler.com/bootcamp-modulos/?origin=hellobar`
   );
   const div = generateDivTag();
   const img = generateImgTag(
@@ -47,10 +47,10 @@ const createHelloBar = () => {
     "Demo Day"
   );
   const p = generatePTag(
-    `<strong>Revive las conferencias del EMMS E-commerce:</strong> Growth Marketing, Meta Ads, Organic
-    Social, marketing de escasez ¡y más!`
+    `<strong>¡Certifícate gratis en Automation Marketing! 🚀</strong> Regístrate y accede a todas
+    nuestras capacitaciones sin costo. ¡Empieza ya!`
   );
-  const btn = generateButtonTag("ACCEDE AHORA");
+  const btn = generateButtonTag("REGISTRARME AHORA");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
