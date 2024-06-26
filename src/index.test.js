@@ -1,38 +1,38 @@
-import { createHelloBar } from "./index";
+import { injectHelloBar } from './index';
 
 describe("Test in index.js", () => {
   beforeEach(() => {
-    // Jest uses jsdom as the default test environment which emulates
-    // a browser and provides a document object for the unit tests.
-    // Initialize the document body with the HTML needed for the tests
-    document.body.innerHTML += "<header></header>";
+    document.body.innerHTML = '<header></header>';
   });
 
-  test("Test DOM element creation", () => {
-    createHelloBar();
+  test("Test DOM element creation", async () => {
+    global.fetch = jest.fn(() =>
+      Promise.resolve({
+        ok: true,
+        text: () => Promise.resolve(`
+          <div class="hello-bar hello-bar-academy" id="hello-bar">
+            <a href="https://academy.fromdoppler.com/bootcamp-modulos/?origin=hellobar" target="_blank">
+              <img src="https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/asset-demoday.png" alt="Demo Day" title="Demo Day" class="hb-logo">
+              <p><strong>¡Certifícate gratis en Automation Marketing! 🚀</strong> Regístrate y accede a todas nuestras capacitaciones sin costo. ¡Empieza ya!</p>
+              <button class="hb-button long">REGISTRARME AHORA</button>
+            </a>
+          </div>
+        `),
+      })
+    );
 
-    expect(document.querySelector("header div")).toBeTruthy();
-    expect(document.querySelector("header a ")).toBeTruthy();
-    expect(document.querySelector("header img")).toBeTruthy();
-    expect(document.querySelector("header p")).toBeTruthy();
-    expect(document.querySelector("header button")).toBeTruthy();
-  });
+    await injectHelloBar();
 
-  test("Test to verify that the href exists in the a tag of the hellobar", () => {
-    expect(
-      document.querySelector("header a ").getAttribute("href"),
-    ).toBeTruthy();
-  });
+    const helloBar = document.getElementById('hello-bar');
+    expect(helloBar).not.toBeNull();
 
-  test("Test for the existence of an alternative text in the image", () => {
-    expect(
-      document.querySelector("header img ").getAttribute("alt"),
-    ).toBeTruthy();
-  });
-});
-
-describe("Test in index.js without having a header", () => {
-  test("The execution of the function must not fail even if there is no header tag", () => {
-    createHelloBar();
+    const link = helloBar.querySelector('a');
+    expect(link.href).toBe('https://academy.fromdoppler.com/bootcamp-modulos/?origin=hellobar');
+    const img = helloBar.querySelector('img');
+    expect(img.src).toBe('https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/asset-demoday.png');
+    const p = helloBar.querySelector('p');
+    expect(p.textContent).toContain('¡Certifícate gratis en Automation Marketing!');
+    const button = helloBar.querySelector('button');
+    expect(button.textContent).toBe('REGISTRARME AHORA');
   });
 });
