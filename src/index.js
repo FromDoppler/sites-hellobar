@@ -10,16 +10,16 @@ const loadHtmlTemplate = async (url) => {
 
 const injectHelloBar = async () => {
   try {
-    const templateHtml = await loadHtmlTemplate('./hellobar-template.html');
-    const templateElement = document.createElement('div');
+    const templateHtml = await loadHtmlTemplate("./hellobar-template.html");
+    const templateElement = document.createElement("div");
     templateElement.innerHTML = templateHtml;
 
-    const header = document.querySelector('header');
+    const header = document.querySelector("header");
     if (header) {
       header.insertBefore(templateElement, header.firstChild);
     }
   } catch (error) {
-    console.error('Error injecting HelloBar:', error);
+    console.error("Error injecting HelloBar:", error);
   }
 };
 

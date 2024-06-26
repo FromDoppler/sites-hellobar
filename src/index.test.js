@@ -20,13 +20,13 @@ describe("Test in index.js", () => {
 
   test("Test to verify that the href exists in the a tag of the hellobar", () => {
     expect(
-      document.querySelector("header a ").getAttribute("href")
+      document.querySelector("header a ").getAttribute("href"),
     ).toBeTruthy();
   });
 
   test("Test for the existence of an alternative text in the image", () => {
     expect(
-      document.querySelector("header img ").getAttribute("alt")
+      document.querySelector("header img ").getAttribute("alt"),
     ).toBeTruthy();
   });
 });
