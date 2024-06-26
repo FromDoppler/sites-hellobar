@@ -13,10 +13,11 @@ describe("Test in index.js", () => {
           Promise.resolve(`
           <div class="hello-bar hello-bar-academy" id="hello-bar">
             <a href="https://academy.fromdoppler.com/bootcamp-modulos/?origin=hellobar" target="_blank">
-              <img src="https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/asset-demoday.png"
+              <img src="https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/
+              asset-demoday.png"
               alt="Demo Day" title="Demo Day" class="hb-logo">
-              <p><strong>¡Certifícate gratis en Automation Marketing! 🚀</strong> Regístrate y accede a todas nuestras
-              capacitaciones sin costo. ¡Empieza ya!</p>
+              <p><strong>¡Certifícate gratis en Automation Marketing! 🚀</strong> Regístrate y accede a todas
+              nuestras capacitaciones sin costo. ¡Empieza ya!</p>
               <button class="hb-button long">REGISTRARME AHORA</button>
             </a>
           </div>
