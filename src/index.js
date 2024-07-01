@@ -31,14 +31,14 @@ const generatePTag = (pContent) => {
 
 const generateButtonTag = (buttonContent) => {
   const btn = document.createElement("button");
-  btn.classList.add("hb-button", "long");
+  btn.classList.add("hb-button", "medium");
   btn.innerHTML = buttonContent;
   return btn;
 };
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    `https://academy.fromdoppler.com/bootcamp-modulos/?origin=hellobar`
+    `https://www.fromdoppler.com/es/landing-pages/?origin=hellobar`
   );
   const div = generateDivTag();
   const img = generateImgTag(
@@ -47,10 +47,10 @@ const createHelloBar = () => {
     "Demo Day"
   );
   const p = generatePTag(
-    `<strong>¡Certifícate gratis en Automation Marketing! 🚀</strong> Regístrate y accede a todas
-    nuestras capacitaciones sin costo. ¡Empieza ya!`
+    `<strong>¡Nueva Funcionalidad! Landing Pages ✨</strong> Transforma clics en
+     solo unos pasos: Editor fácil de usar y diseño adaptable. ¡Escala tus ventas!`
   );
-  const btn = generateButtonTag("REGISTRARME AHORA");
+  const btn = generateButtonTag("Descubre más");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
