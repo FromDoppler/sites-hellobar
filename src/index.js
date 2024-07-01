@@ -38,18 +38,18 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    `https://www.fromdoppler.com/es/landing-pages/?origin=hellobar`
+    `https://www.fromdoppler.com/es/landing-pages/?origin=hellobar`,
   );
   const div = generateDivTag();
   const img = generateImgTag(
     "https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/asset-demoday.png",
     "Demo Day",
-    "Demo Day"
+    "Demo Day",
   );
   const p = generatePTag(
     `<strong>¡Nueva Funcionalidad! Landing Pages ✨</strong> Transforma clics en
-     solo unos pasos: Editor fácil de usar y diseño adaptable. ¡Escala tus
-     ventas!`
+    solo unos pasos: Editor fácil de usar y diseño adaptable. ¡Escala tus
+    ventas!`,
   );
   const btn = generateButtonTag("Descubre más");
   const header = document.querySelector("header");
