@@ -48,7 +48,8 @@ const createHelloBar = () => {
   );
   const p = generatePTag(
     `<strong>¡Nueva Funcionalidad! Landing Pages ✨</strong> Transforma clics en
-     solo unos pasos: Editor fácil de usar y diseño adaptable. ¡Escala tus ventas!`
+     solo unos pasos: Editor fácil de usar y diseño adaptable. ¡Escala tus
+     ventas!`
   );
   const btn = generateButtonTag("Descubre más");
   const header = document.querySelector("header");
