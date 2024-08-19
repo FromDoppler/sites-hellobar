@@ -3,7 +3,8 @@ import "./hellobar.css";
 const generateAnchorTag = (url) => {
   const anchorTag = document.createElement("a");
   anchorTag.setAttribute("target", "_blank");
-  anchorTag.href = url;
+  anchorTag.href = url.trim();
+
   return anchorTag;
 };
 
@@ -31,14 +32,16 @@ const generatePTag = (pContent) => {
 
 const generateButtonTag = (buttonContent) => {
   const btn = document.createElement("button");
-  btn.classList.add("hb-button", "medium");
+  btn.classList.add("hb-button");
+  // btn.classList.add("hb-button", "medium");
   btn.innerHTML = buttonContent;
   return btn;
 };
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    `https://www.fromdoppler.com/es/landing-pages/?origin=hellobar`,
+    `https://academy.fromdoppler.com/cursos/lead-generation/lessons/fundamentos-de-la-generacion-
+de-leads/?origin=hellobar`,
   );
   const div = generateDivTag();
   const img = generateImgTag(
@@ -47,11 +50,10 @@ const createHelloBar = () => {
     "Demo Day",
   );
   const p = generatePTag(
-    `<strong>¡Nueva Funcionalidad! Landing Pages ✨</strong> Transforma clics en
-    solo unos pasos: Editor fácil de usar y diseño adaptable. ¡Escala tus
-    ventas!`,
+    `<strong>NUEVO CURSO | Certificación en Lead Generation ⚡</strong> Aprende a captar
+    Leads de calidad y optimiza tu Embudo de Ventas en solo 4 horas.`,
   );
-  const btn = generateButtonTag("Descubre más");
+  const btn = generateButtonTag("¡Inscríbete gratis ahora!");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
