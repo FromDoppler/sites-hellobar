@@ -3,9 +3,7 @@ import "./hellobar.css";
 const generateAnchorTag = (url) => {
   const anchorTag = document.createElement("a");
   anchorTag.setAttribute("target", "_blank");
-  console.log(url);
   anchorTag.href = url.trim();
-  console.log(url.trim());
 
   return anchorTag;
 };
