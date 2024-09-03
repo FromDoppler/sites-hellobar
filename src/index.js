@@ -40,8 +40,8 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    `https://academy.fromdoppler.com/cursos/lead-generation/lessons/fundamentos-de-la-generacion-
-de-leads/?origin=hellobar`,
+    `https://evento.fromdoppler.com/webinar-nutricion-conversaciones/?utm_source=fromdoppler
+&utm_medium=hellobar&utm_campaign=am-LanzamientoConversacionesWebinar-nutricion-sep24`,
   );
   const div = generateDivTag();
   const img = generateImgTag(
@@ -50,10 +50,10 @@ de-leads/?origin=hellobar`,
     "Demo Day",
   );
   const p = generatePTag(
-    `<strong>NUEVO CURSO | Certificación en Lead Generation ⚡</strong> Aprende a captar
-    Leads de calidad y optimiza tu Embudo de Ventas en solo 4 horas.`,
+    `<strong>Nuevo Lanzamiento ¡Doppler Conversaciones! 💫</strong> ¡Regístrate en nuestro
+    Webinar gratuito y aprende a gestionar tus Chatbots. Aumenta tus ventas hasta en un 40% 🚀`,
   );
-  const btn = generateButtonTag("¡Inscríbete gratis ahora!");
+  const btn = generateButtonTag("Reserva tu lugar");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
