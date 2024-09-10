@@ -4,7 +4,6 @@ const generateAnchorTag = (url) => {
   const anchorTag = document.createElement("a");
   anchorTag.setAttribute("target", "_blank");
   anchorTag.href = url.trim();
-
   return anchorTag;
 };
 
