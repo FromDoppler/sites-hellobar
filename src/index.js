@@ -39,8 +39,7 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    `https://evento.fromdoppler.com/webinar-nutricion-conversaciones/?utm_source=fromdoppler
-&utm_medium=hellobar&utm_campaign=am-LanzamientoConversacionesWebinar-nutricion-sep24`,
+    `https://www.fromdoppler.com/es/conversaciones/?origin=hellobar`,
   );
   const div = generateDivTag();
   const img = generateImgTag(
@@ -49,10 +48,10 @@ const createHelloBar = () => {
     "Demo Day",
   );
   const p = generatePTag(
-    `<strong>Nuevo Lanzamiento ¡Doppler Conversaciones! 💫</strong> ¡Regístrate en nuestro
-    Webinar gratuito y aprende a gestionar tus Chatbots. Aumenta tus ventas hasta en un 40% 🚀`,
+    `<strong>Nueva Solución: ¡Doppler Conversaciones! 💫</strong> Gestiona los Chatbots de todos tus
+    canales de Marketing desde una única plataforma. Ahorra tiempo, optimiza recursos y genera más ventas.`,
   );
-  const btn = generateButtonTag("Reserva tu lugar");
+  const btn = generateButtonTag("¡Descubre más!");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
