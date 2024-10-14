@@ -39,8 +39,8 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    `https://evento.fromdoppler.com/webinar-nutricion-conversaciones/?utm_source=fromdoppler
-&utm_medium=hellobar&utm_campaign=am-LanzamientoConversacionesWebinar-nutricion-sep24`,
+    `https://goemms.com/digital-trends?utm_source=fromdoppler&utm_medium=hellobar&
+utm_campaign=cw-captacionleadsEMMSDT24-invitacion-oct24`,
   );
   const div = generateDivTag();
   const img = generateImgTag(
@@ -49,10 +49,10 @@ const createHelloBar = () => {
     "Demo Day",
   );
   const p = generatePTag(
-    `<strong>Nuevo Lanzamiento ¡Doppler Conversaciones! 💫</strong> ¡Regístrate en nuestro
-    Webinar gratuito y aprende a gestionar tus Chatbots. Aumenta tus ventas hasta en un 40% 🚀`,
+    `<strong>EMMS Digital Trends 2024 🚀</strong> Descubre las últimas innovaciones
+    en Marketing Digital y aplícalas para aumentar tus ventas. ¡No te quedes afuera!`,
   );
-  const btn = generateButtonTag("Reserva tu lugar");
+  const btn = generateButtonTag("REGÍSTRATE GRATIS");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
