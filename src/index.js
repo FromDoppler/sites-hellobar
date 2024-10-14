@@ -39,7 +39,8 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    `https://www.fromdoppler.com/es/conversaciones/?origin=hellobar`,
+    `https://goemms.com/digital-trends?utm_source=fromdoppler&utm_medium=hellobar&
+utm_campaign=cw-captacionleadsEMMSDT24-invitacion-oct24`,
   );
   const div = generateDivTag();
   const img = generateImgTag(
@@ -48,10 +49,10 @@ const createHelloBar = () => {
     "Demo Day",
   );
   const p = generatePTag(
-    `<strong>Nueva Solución: ¡Doppler Conversaciones! 💫</strong> Gestiona los Chatbots de todos tus
-    canales de Marketing desde una única plataforma. Ahorra tiempo, optimiza recursos y genera más ventas.`,
+    `<strong>EMMS Digital Trends 2024 🚀</strong> Descubre las últimas innovaciones
+    en Marketing Digital y aplícalas para aumentar tus ventas. ¡No te quedes afuera!`,
   );
-  const btn = generateButtonTag("¡Descubre más!");
+  const btn = generateButtonTag("REGÍSTRATE GRATIS");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
