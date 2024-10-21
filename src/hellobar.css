@@ -189,13 +189,16 @@ a {
 }
 
 .hello-bar-emms p,
-.hello-bar-emms p span {
+.hello-bar-emms p span,
+.hello-bar-emms p strong {
   color: #fff;
 }
 
 .hello-bar-emms .hb-button {
   background: #1c0329;
   font-size: 12px;
+  color: #33ad73;
+  border: 1px solid #33ad73;
 }
 
 .hello-bar-emms .hb-button.long {
