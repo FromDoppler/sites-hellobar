@@ -9,7 +9,7 @@ const generateAnchorTag = (url) => {
 
 const generateDivTag = () => {
   const div = document.createElement("div");
-  div.classList.add("hello-bar", "hello-bar-academy");
+  div.classList.add("hello-bar", "hello-bar-emms");
   div.id = "hello-bar";
   return div;
 };
@@ -32,7 +32,7 @@ const generatePTag = (pContent) => {
 const generateButtonTag = (buttonContent) => {
   const btn = document.createElement("button");
   btn.classList.add("hb-button");
-  // btn.classList.add("hb-button", "medium");
+  btn.classList.add("hb-button", "long");
   btn.innerHTML = buttonContent;
   return btn;
 };
