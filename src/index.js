@@ -52,7 +52,7 @@ const createHelloBar = () => {
     `<strong>EMMS DIGITAL TRENDS | ¡Cuenta regresiva! ⏳</strong> Descubre el mayor evento
     de tendencias e innovaciones digitales y aplícalas en tu negocio.`,
   );
-  const btn = generateButtonTag("REGÍSTRATE GRATIS");
+  const btn = generateButtonTag("¡REGÍSTRATE GRATIS!");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
