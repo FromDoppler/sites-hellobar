@@ -39,8 +39,8 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = () => {
   const a = generateAnchorTag(
-    `https://goemms.com/digital-trends?utm_source=fromdoppler&utm_medium=hellobar&
-utm_campaign=cw-captacionleadsEMMSDT24-invitacion-oct24`,
+    `https://goemms.com/digital-trends?utm_source=fromdoppler&utm_medium=hellobar
+&utm_campaign=cw-cuenta-regresiva-EMMSDT24-invitacion-nov24`,
   );
   const div = generateDivTag();
   const img = generateImgTag(
@@ -49,10 +49,10 @@ utm_campaign=cw-captacionleadsEMMSDT24-invitacion-oct24`,
     "Demo Day",
   );
   const p = generatePTag(
-    `<strong>EMMS Digital Trends 2024 🚀</strong> Descubre las últimas innovaciones
-    en Marketing Digital y aplícalas para aumentar tus ventas. ¡No te quedes afuera!`,
+    `<strong>EMMS DIGITAL TRENDS | ¡Cuenta regresiva! ⏳</strong> Descubre el mayor evento
+    de tendencias e innovaciones digitales y aplícalas en tu negocio.`,
   );
-  const btn = generateButtonTag("REGÍSTRATE GRATIS");
+  const btn = generateButtonTag("¡REGÍSTRATE GRATIS!");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
