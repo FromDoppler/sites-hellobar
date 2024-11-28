@@ -49,10 +49,10 @@ const createHelloBar = () => {
     "Demo Day",
   );
   const p = generatePTag(
-    `<strong>¡Ya comenzó! 🚨 | EMMS Digital Trends</strong> Súmate a conferencias en
-    vivo de marcas como Google, Meta, Arcos Dorados y Canva.`,
+    `<strong>🚀 Revive el EMMS Digital Trends. </strong> Conferencias online
+     y gratuitas`,
   );
-  const btn = generateButtonTag("¡REGÍSTRATE GRATIS!");
+  const btn = generateButtonTag("ACCEDE GRATIS");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
