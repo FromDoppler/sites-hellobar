@@ -50,7 +50,7 @@ const createHelloBar = () => {
   );
   const p = generatePTag(
     `<strong>🚀 Revive el EMMS Digital Trends. </strong> Conferencias online
-     y gratuitas`,
+    y gratuitas`,
   );
   const btn = generateButtonTag("ACCEDE GRATIS");
   const header = document.querySelector("header");
