@@ -9,7 +9,7 @@ const generateAnchorTag = (url) => {
 
 const generateDivTag = () => {
   const div = document.createElement("div");
-  div.classList.add("hello-bar", "hello-bar-emms");
+  div.classList.add("hello-bar", "hello-bar-academy");
   div.id = "hello-bar";
   return div;
 };
@@ -38,10 +38,7 @@ const generateButtonTag = (buttonContent) => {
 };
 
 const createHelloBar = () => {
-  const a = generateAnchorTag(
-    `https://goemms.com/digital-trends?utm_source=fromdoppler&utm_medium=hellobar
-&utm_campaign=cw-post-EMMSDT24-invitacion-nov24`,
-  );
+  const a = generateAnchorTag(`https://app.fromdoppler.com/onsite`);
   const div = generateDivTag();
   const img = generateImgTag(
     "https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/asset-demoday.png",
@@ -49,10 +46,10 @@ const createHelloBar = () => {
     "Demo Day",
   );
   const p = generatePTag(
-    `<strong>🚀 Revive el EMMS Digital Trends. </strong> Conferencias online
-    y gratuitas`,
+    `<strong>🚀 ¡Lanzamos Onsite Marketing!</strong> Dispara ventanas emergentes con
+    los productos más vistos, artículos relacionados ¡y multiplica tus ventas!`,
   );
-  const btn = generateButtonTag("ACCEDE GRATIS");
+  const btn = generateButtonTag("DESCÚBRELO AQUÍ");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);

@@ -6,7 +6,7 @@ RUN shellcheck -e SC1091,SC1090 ./*.sh
 FROM node:20 AS restore
 WORKDIR /src
 COPY package.json yarn.lock ./
-RUN yarn
+RUN yarn config set registry https://registry.npmjs.org && yarn
 COPY . .
 
 FROM restore AS verify-format
