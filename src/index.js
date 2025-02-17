@@ -1,8 +1,13 @@
 import "./hellobar.css";
 
 const generateAnchorTag = (url) => {
+  const openInExternalTab = false;
   const anchorTag = document.createElement("a");
-  anchorTag.setAttribute("target", "_blank");
+
+  if (openInExternalTab) {
+    anchorTag.setAttribute("target", "_blank");
+  }
+
   anchorTag.href = url.trim();
   return anchorTag;
 };
