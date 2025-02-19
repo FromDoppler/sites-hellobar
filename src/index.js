@@ -43,7 +43,9 @@ const generateButtonTag = (buttonContent) => {
 };
 
 const createHelloBar = () => {
-  const a = generateAnchorTag(`https://app.fromdoppler.com/onsite`);
+  const a =
+    generateAnchorTag(`https://www.fromdoppler.com/es/on-site/?utm_source=fromdoppler&
+utm_medium=hellobar&utm_campaign=lanzamiento-onsite-leads-feb25 `);
   const div = generateDivTag();
   const img = generateImgTag(
     "https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/asset-demoday.png",
