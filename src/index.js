@@ -53,7 +53,7 @@ utm_medium=hellobar&utm_campaign=lanzamiento-onsite-leads-feb25 `);
     "Demo Day",
   );
   const p = generatePTag(
-    `<strong>🚀 ¡Lanzamos Onsite Marketing!</strong> Dispara ventanas emergentes con
+    `<strong>🚀 ¡Lanzamos OnSite Marketing!</strong> Dispara ventanas emergentes con
     los productos más vistos, artículos relacionados ¡y multiplica tus ventas!`,
   );
   const btn = generateButtonTag("DESCÚBRELO AQUÍ");
