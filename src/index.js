@@ -58,20 +58,26 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = (type = HellobarType.EMMS) => {
   const a = generateAnchorTag(
-    `http://goemms.com/ecommerce?utm_source=fromdoppler&utm_medium=
-hellobar&utm_campaign=cw-EMMSEcom25-invitacion-canalespropios-nutricion-feb25`,
+    `http://goemms.com/ecommerce?utm_source=fromdoppler&utm_medium=hellobar&utm_campaign=
+    cw-emmsecom25-cuentaregresiva-canalespropios-nutricion-abr25`,
     true,
   );
+
   const div = generateDivTag(type);
   const img = generateImgTag(
     "https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/asset-demoday.png",
     "Demo Day",
     "Demo Day",
   );
-  const p = generatePTag(
-    `<strong>🚀 Vuelve el EMMS Ecommerce 2025</strong> – Aprende de los mejores expertos y descubre
-    las estrategias más efectivas para potenciar tu Tienda Online.`,
-  );
+
+  const pLines = [
+    '<strong>💎 ¡Faltan pocos días para el EMMS E-commerce 2025!</strong> –',
+    'Prepárate para vivir el evento más esperado del año junto a líderes',
+    'globales del comercio electrónico. ¡Es gratis y online!',
+  ];
+
+  const p = generatePTag(pLines.join(' '));
+
   const btn = generateButtonTag("REGÍSTRATE GRATIS");
   const header = document.querySelector("header");
   div.appendChild(img);
