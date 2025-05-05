@@ -59,7 +59,7 @@ const generateButtonTag = (buttonContent) => {
 const createHelloBar = (type = HellobarType.EMMS) => {
   const a = generateAnchorTag(
     `http://goemms.com/ecommerce?utm_source=fromdoppler&utm_medium=hellobar&utm_campaign=
-    cw-emmsecom25-cuentaregresiva-canalespropios-nutricion-abr25`,
+    cw-emmsecom25-revive-canalespropios-nutricion-abr25`,
     true,
   );
 
@@ -71,14 +71,14 @@ const createHelloBar = (type = HellobarType.EMMS) => {
   );
 
   const pLines = [
-    '<strong>💎 ¡Faltan pocos días para el EMMS E-commerce 2025!</strong> –',
-    'Prepárate para vivir el evento más esperado del año junto a líderes',
-    'globales del comercio electrónico. ¡Es gratis y online!',
+    '<strong>📢 El EMMS E-commerce finalizó.</strong> Accede a todas las conferencias',
+    'del evento más relevante en la industria del E-commerce,',
+    '¡ahora en formato on-demand!',
   ];
 
   const p = generatePTag(pLines.join(' '));
 
-  const btn = generateButtonTag("REGÍSTRATE GRATIS");
+  const btn = generateButtonTag("REVÍVELO GRATIS");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
