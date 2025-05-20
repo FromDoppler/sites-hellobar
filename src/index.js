@@ -71,9 +71,8 @@ const createHelloBar = (type = HellobarType.EMMS) => {
   );
 
   const pLines = [
-    "<strong>💡¿Ya te registraste al Entrenamiento Gratuito de Doppler?",
-    "Aprende a potenciar tu negocio con Landing Pages, Conversaciones y OnSite Marketing.",
-    "</strong>",
+    "<strong>💡¿Ya te registraste al Entrenamiento Gratuito de Doppler?</strong>",
+    "Aprende a potenciar tu negocio con Landing Pages, Conversaciones y OnSite Marketing."
   ];
 
   const p = generatePTag(pLines.join(" "));
