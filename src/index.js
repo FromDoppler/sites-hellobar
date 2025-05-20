@@ -58,8 +58,8 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = (type = HellobarType.EMMS) => {
   const a = generateAnchorTag(
-    `http://goemms.com/ecommerce?utm_source=fromdoppler&utm_medium=hellobar&utm_campaign=
-    cw-emmsecom25-revive-canalespropios-nutricion-abr25`,
+    `https://evento.fromdoppler.com/entrenamiento-doppler/?utm_source=fromdoppler&utm_medium=destacadotablero
+    &utm_campaign=cw-webinar-addons-nutricion-may25`,
     true,
   );
 
@@ -71,14 +71,14 @@ const createHelloBar = (type = HellobarType.EMMS) => {
   );
 
   const pLines = [
-    '<strong>📢 El EMMS E-commerce finalizó.</strong> Accede a todas las conferencias',
-    'del evento más relevante en la industria del E-commerce,',
-    '¡ahora en formato on-demand!',
+    "<strong>💡¿Ya te registraste al Entrenamiento Gratuito de Doppler?",
+    "Aprende a potenciar tu negocio con Landing Pages, Conversaciones y OnSite Marketing.",
+    "</strong>",
   ];
 
-  const p = generatePTag(pLines.join(' '));
+  const p = generatePTag(pLines.join(" "));
 
-  const btn = generateButtonTag("REVÍVELO GRATIS");
+  const btn = generateButtonTag("INSCRÍBETE AQUÍ");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
@@ -87,6 +87,6 @@ const createHelloBar = (type = HellobarType.EMMS) => {
   if (header) header.insertBefore(a, header.firstChild);
 };
 
-createHelloBar(HellobarType.EMMS);
+createHelloBar(HellobarType.ACADEMY);
 
 export { createHelloBar };
