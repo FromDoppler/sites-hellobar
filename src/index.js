@@ -59,7 +59,7 @@ const generateButtonTag = (buttonContent) => {
 const createHelloBar = (type = HellobarType.EMMS) => {
   const a = generateAnchorTag(
     `https://evento.fromdoppler.com/entrenamiento-doppler/?utm_source=fromdoppler&utm_medium=destacadotablero
-    &utm_campaign=cw-webinar-addons-nutricion-may25`,
+&utm_campaign=cw-webinar-addons-nutricion-may25`,
     true,
   );
 
