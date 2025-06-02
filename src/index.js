@@ -58,8 +58,8 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = (type = HellobarType.EMMS) => {
   const a = generateAnchorTag(
-    `https://evento.fromdoppler.com/entrenamiento-doppler/?utm_source=fromdoppler&utm_medium=destacadotablero
-&utm_campaign=cw-webinar-addons-nutricion-may25`,
+    `https://app.fromdoppler.com/login?lang=es&redirect=/ControlPanel/AccountPreferences
+/UpgradeAccount?Plan=monthly&accountType=FREE&promo-code=CUMPLE50`,
     true,
   );
 
@@ -71,13 +71,13 @@ const createHelloBar = (type = HellobarType.EMMS) => {
   );
 
   const pLines = [
-    "<strong>💡¿Ya te registraste al Entrenamiento Gratuito de Doppler?</strong>",
-    "Aprende a potenciar tu negocio con Landing Pages, Conversaciones y OnSite Marketing."
+    "<strong>🎉 Celebramos 19 años con un beneficio único.</strong>",
+    "Exclusivo para cuentas nuevas: 50% OFF en Planes por Contacto durante 3 meses. ¡No te lo pierdas!",
   ];
 
   const p = generatePTag(pLines.join(" "));
 
-  const btn = generateButtonTag("INSCRÍBETE AQUÍ");
+  const btn = generateButtonTag("APROVECHA EL BENEFICIO");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
