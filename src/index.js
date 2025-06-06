@@ -73,9 +73,11 @@ const createHelloBar = (type = HellobarType.EMMS) => {
 
   const pLines = [
     "<strong>🎉 Celebramos 19 años con un beneficio único.</strong>",
-    "Exclusivo para cuentas nuevas: 50% OFF en Planes por Contacto durante 3 meses. Usa el cupón CUMPLE50",
+    "Exclusivo para cuentas nuevas: 50% OFF en Planes por Contacto durante 3 meses. Usa el cupón",
+    "<strong> CUMPLE50</strong>",
     "¡No te lo pierdas!",
   ];
+
 
   const p = generatePTag(pLines.join(" "));
 
