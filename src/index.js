@@ -58,8 +58,9 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = (type = HellobarType.EMMS) => {
   const a = generateAnchorTag(
-    `https://app.fromdoppler.com/login?lang=es&redirect=/ControlPanel/AccountPreferences
-/UpgradeAccount?Plan=monthly&accountType=FREE&promo-code=CUMPLE50`,
+    `https://app.fromdoppler.com/login?lang=es&redirect=/ControlPanel/AccountPreferences/UpgradeAccount
+?Plan=monthly&accountType=FREE&promo-code=CUMPLE50&utm_medium=hellobar&utm_campaign=cm-aniversario-doppler
+-upgrade-jun25&utm_term=cta`,
     true,
   );
 
@@ -72,7 +73,8 @@ const createHelloBar = (type = HellobarType.EMMS) => {
 
   const pLines = [
     "<strong>🎉 Celebramos 19 años con un beneficio único.</strong>",
-    "Exclusivo para cuentas nuevas: 50% OFF en Planes por Contacto durante 3 meses. ¡No te lo pierdas!",
+    "Exclusivo para cuentas nuevas: 50% OFF en Planes por Contacto durante 3 meses. Usa el cupón CUMPLE50",
+    "¡No te lo pierdas!",
   ];
 
   const p = generatePTag(pLines.join(" "));
