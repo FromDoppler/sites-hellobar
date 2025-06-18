@@ -1,5 +1,7 @@
 import "./hellobar.css";
 
+const SHOW_HELLOBAR = true;
+
 const HellobarType = {
   EMMS: "emms",
   ACADEMY: "academy",
@@ -58,9 +60,8 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = (type = HellobarType.EMMS) => {
   const a = generateAnchorTag(
-    `https://app.fromdoppler.com/login?lang=es&redirect=/ControlPanel/AccountPreferences/UpgradeAccount
-?Plan=monthly&accountType=FREE&promo-code=CUMPLE50&utm_medium=hellobar&utm_campaign=cm-aniversario-doppler
--upgrade-jun25&utm_term=cta`,
+    `https://evento.fromdoppler.com/webinar-junio-ecommerce-2025?utm_source=fromdoppler
+&utm_medium=hellobar&utm_campaign=cm-webinar-ecommerce-junio-nutricion-jun25&utm_term=cta`,
     true,
   );
 
@@ -72,16 +73,14 @@ const createHelloBar = (type = HellobarType.EMMS) => {
   );
 
   const pLines = [
-    "<strong>🎉 Celebramos 19 años con un beneficio único.</strong>",
-    "Exclusivo para cuentas nuevas: 50% OFF en Planes por Contacto durante 3 meses. Usa el cupón",
-    "<strong> CUMPLE50</strong>",
-    "¡No te lo pierdas!",
+    "<strong>📣 Seminario online y gratuito:</strong>",
+    "Inscríbete y aprende cómo optimizar tu E-commerce y la experiencia de tus clientes."
   ];
 
 
   const p = generatePTag(pLines.join(" "));
 
-  const btn = generateButtonTag("APROVECHA EL BENEFICIO");
+  const btn = generateButtonTag("REGÍSTRATE AQUÍ");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
@@ -90,6 +89,8 @@ const createHelloBar = (type = HellobarType.EMMS) => {
   if (header) header.insertBefore(a, header.firstChild);
 };
 
-createHelloBar(HellobarType.ACADEMY);
+if (SHOW_HELLOBAR) {
+  createHelloBar(HellobarType.ACADEMY);
+}
 
 export { createHelloBar };
