@@ -1,1 +1,31 @@
-**/
+# Ignorar carpetas pesadas o sin código que formatear
+node_modules
+build
+.vscode
+
+# Ignorar archivos de configuración y entorno que no son código
+*.log
+.git
+.gitignore
+Dockerfile*
+Jenkinsfile
+.doppler-ci
+doppler-jenkins-ci.groovy
+.env*
+.dockerignore
+.editorconfig
+.gitattributes
+.gitlint
+.prettierignore
+
+# Scripts bash / shell que Prettier no maneja
+*.sh
+
+# Locks y otros archivos no parseables
+yarn.lock
+
+# Ignorar secretos o archivos cifrados
+*.[sS]ecret.*
+**/[sS]ecret.*
+!*.[eE]ncrypted.[sS]ecret.*
+!**/[eE]ncrypted.[sS]ecret.*
