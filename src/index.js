@@ -74,9 +74,8 @@ const createHelloBar = (type = HellobarType.EMMS) => {
 
   const pLines = [
     "<strong>📣 Seminario online y gratuito:</strong>",
-    "Inscríbete y aprende cómo optimizar tu E-commerce y la experiencia de tus clientes."
+    "Inscríbete y aprende cómo optimizar tu E-commerce y la experiencia de tus clientes.",
   ];
-
 
   const p = generatePTag(pLines.join(" "));
 
