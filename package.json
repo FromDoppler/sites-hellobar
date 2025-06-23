@@ -28,8 +28,8 @@
     "fix-format": "yarn prettier-fix && yarn eclint-fix",
     "eclint-fix": "eclint fix",
     "eclint-check": "eclint check",
-    "prettier-fix": "prettier --write \"**/**\"",
-    "prettier-check": "prettier --check \"**/**\""
+    "prettier-fix": "prettier --write \"**/*.{js,ts,jsx,tsx,json,md,html,css}\"",
+    "prettier-check": "prettier --check \"**/*.{js,ts,jsx,tsx,json,md,html,css}\""
   },
   "eslintConfig": {
     "extends": [
