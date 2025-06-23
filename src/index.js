@@ -60,8 +60,9 @@ const generateButtonTag = (buttonContent) => {
 
 const createHelloBar = (type = HellobarType.EMMS) => {
   const a = generateAnchorTag(
-    `https://evento.fromdoppler.com/webinar-junio-ecommerce-2025?utm_source=fromdoppler
-&utm_medium=hellobar&utm_campaign=cm-webinar-ecommerce-junio-nutricion-jun25&utm_term=cta`,
+    `https://academy.fromdoppler.com/cursos/certificacion-en-estrategias-de-captacion-y
+-conversion/lessons/que-es-una-estrategia-de-conversion-efectiva/?utm_source=fromdoppler
+&utm_medium=hellobar&utm_campaign=cm-certificacion-estrategias-avanzadas-leads-jun25&utm_term=cta`,
     true,
   );
 
@@ -73,13 +74,13 @@ const createHelloBar = (type = HellobarType.EMMS) => {
   );
 
   const pLines = [
-    "<strong>📣 Seminario online y gratuito:</strong>",
-    "Inscríbete y aprende cómo optimizar tu E-commerce y la experiencia de tus clientes.",
+    "<strong>🎓Nuevo curso disponible en Doppler Academy</strong>",
+    "Domina la captación y conversión con nuestra nueva Certificación Online.",
   ];
 
   const p = generatePTag(pLines.join(" "));
 
-  const btn = generateButtonTag("REGÍSTRATE AQUÍ");
+  const btn = generateButtonTag("EMPIEZA HOY");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
