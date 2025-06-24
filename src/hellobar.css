@@ -215,7 +215,6 @@ a {
   border-bottom: 4px solid #8c6698;
 }
 
-
 .hello-bar-doppler img.hb-logo {
   display: none;
 }
@@ -231,12 +230,9 @@ a {
   font-size: 13px;
 }
 
-
 .hello-bar-doppler .hb-button.long {
   width: 210px;
 }
-
-
 
 /* Academy  */
 
@@ -256,10 +252,13 @@ a {
   border: 1px solid #ffffff;
   color: #fff;
   font-size: 13px;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    border-color 0.3s;
 }
 
-.hello-bar-academy .hb-button:hover{
+.hello-bar-academy .hb-button:hover {
   background-color: #ffffff;
   color: #6f4f7a;
   border-color: #6f4f7a;

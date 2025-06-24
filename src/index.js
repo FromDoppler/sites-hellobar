@@ -55,7 +55,7 @@ const generatePTag = (pContent) => {
   return p;
 };
 
-const generateButtonTag = (buttonContent,  size = "medium") => {
+const generateButtonTag = (buttonContent, size = "medium") => {
   const btn = document.createElement("button");
   btn.classList.add("hb-button");
 
