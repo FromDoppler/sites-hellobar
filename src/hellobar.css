@@ -72,6 +72,7 @@ a {
   position: relative;
   z-index: 9;
 }
+
 .hello-bar img.hb-logo {
   height: 32px;
   margin: 0;
@@ -145,9 +146,11 @@ a {
 .hb-button.small {
   width: 90px;
 }
+
 .hb-button.medium {
   width: 132px;
 }
+
 .hb-button.long {
   width: 178px;
 }
@@ -205,28 +208,59 @@ a {
   width: 210px;
 }
 
-/* Academy Emms */
+/* Doppler */
 
-.hello-bar-academy {
+.hello-bar-doppler {
   background-color: #fce579;
   border-bottom: 4px solid #8c6698;
 }
 
-.hello-bar-academy img.hb-logo {
+
+.hello-bar-doppler img.hb-logo {
   display: none;
 }
 
-.hello-bar-academy p,
-.hello-bar-academy p span {
+.hello-bar-doppler p,
+.hello-bar-doppler p span {
   color: #000000;
 }
 
-.hello-bar-academy .hb-button {
+.hello-bar-doppler .hb-button {
   background: #fce579;
   color: #000000;
   font-size: 13px;
 }
 
-.hello-bar-academy .hb-button.long {
+
+.hello-bar-doppler .hb-button.long {
   width: 210px;
+}
+
+
+
+/* Academy  */
+
+.hello-bar-academy {
+  background-color: #6f4f7a;
+  border-bottom: 4px solid #b58fc1;
+}
+
+.hello-bar-academy p,
+.hello-bar-academy p span,
+.hello-bar-academy p strong {
+  color: #ffffff;
+}
+
+.hello-bar-academy .hb-button {
+  background-color: #6f4f7a;
+  border: 1px solid #ffffff;
+  color: #fff;
+  font-size: 13px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.hello-bar-academy .hb-button:hover{
+  background-color: #ffffff;
+  color: #6f4f7a;
+  border-color: #6f4f7a;
 }
