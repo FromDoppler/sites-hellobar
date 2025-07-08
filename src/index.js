@@ -1,11 +1,27 @@
 import "./hellobar.css";
 
-const SHOW_HELLOBAR = true;
+const SHOW_HELLOBAR = true; //poner en false para quitar la hellobar de todos los sitios
 
-const HellobarType = {
-  EMMS: "emms",
-  ACADEMY: "academy",
-  DOPPLER: "doppler",
+const HELLOBAR_CONFIG = {
+  style: "doppler", // "doppler"(amarillo), "academy"(violeta), "emms"
+
+  content: {
+    title: "💬 ¡Nuevo Chatbot para tus comentarios de Instagram!",
+    description:
+      "Automatiza respuestas, gana tiempo y capta Leads sin esfuerzo.",
+  },
+
+  ctaText: "ACTÍVALO AHORA",
+  ctaUrl:
+    "https://app.fromdoppler.com/signup?utm_source=fromdoppler&utm_medium=hellobar" +
+    "&utm_campaign=am-bot-instagram-leads-jul25&utm_term=cta",
+  openInNewTab: true,
+
+  imageUrl:
+    "https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/" +
+    "asset-demoday.png", // TODO: cambiar de QA a prod
+  imageAlt: "Chatbot Instagram",
+  imageTitle: "Chatbot Instagram",
 };
 
 const generateAnchorTag = (url, shouldOpenInNewTab = true) => {
@@ -23,13 +39,13 @@ const generateDivTag = (type) => {
   const div = document.createElement("div");
   div.classList.add("hello-bar");
   switch (type) {
-    case HellobarType.EMMS:
+    case "emms":
       div.classList.add("hello-bar-emms");
       break;
-    case HellobarType.ACADEMY:
+    case "academy":
       div.classList.add("hello-bar-academy");
       break;
-    case HellobarType.DOPPLER:
+    case "doppler":
       div.classList.add("hello-bar-doppler");
       break;
     default:
@@ -66,29 +82,24 @@ const generateButtonTag = (buttonContent, size = "medium") => {
   return btn;
 };
 
-const createHelloBar = (type = HellobarType.EMMS) => {
-  const a = generateAnchorTag(
-    `https://academy.fromdoppler.com/cursos/certificacion-en-estrategias-de-captacion
--y-conversion/lessons/que-es-una-estrategia-de-conversion-efectiva/?utm_source=
-fromdoppler&utm_medium=hellobar&utm_campaign=cm-certificacion-estrategias-avanzadas-leads-jun25&utm_term=cta`,
-    true,
-  );
+const createHelloBar = (config = HELLOBAR_CONFIG) => {
+  const a = generateAnchorTag(config.ctaUrl, config.openInNewTab);
 
-  const div = generateDivTag(type);
+  const div = generateDivTag(config.style);
   const img = generateImgTag(
-    "https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/asset-demoday.png",
-    "Demo Day",
-    "Demo Day",
+    config.imageUrl,
+    config.imageAlt,
+    config.imageTitle,
   );
 
   const pLines = [
-    "<strong>🎓Nuevo curso disponible en Doppler Academy</strong>",
-    "Domina la captación y conversión con nuestra nueva Certificación Online.",
+    `<strong>${config.content.title}</strong>`,
+    config.content.description,
   ];
 
   const p = generatePTag(pLines.join(" "));
 
-  const btn = generateButtonTag("EMPIEZA HOY");
+  const btn = generateButtonTag(config.ctaText);
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
@@ -98,7 +109,7 @@ fromdoppler&utm_medium=hellobar&utm_campaign=cm-certificacion-estrategias-avanza
 };
 
 if (SHOW_HELLOBAR) {
-  createHelloBar(HellobarType.ACADEMY);
+  createHelloBar();
 }
 
 export { createHelloBar };
