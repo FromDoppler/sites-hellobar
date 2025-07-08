@@ -3,7 +3,7 @@ import "./hellobar.css";
 const SHOW_HELLOBAR = true; //poner en false para quitar la hellobar de todos los sitios
 
 const HELLOBAR_CONFIG = {
-  style: "doppler", // "doppler"(amarillo), "academy"(violeta), "emms"
+  style: "doppler", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
 
   content: {
     title: "💬 ¡Nuevo Chatbot para tus comentarios de Instagram!",
@@ -14,7 +14,7 @@ const HELLOBAR_CONFIG = {
   ctaText: "ACTÍVALO AHORA",
   ctaUrl:
     "https://app.fromdoppler.com/signup?utm_source=fromdoppler&utm_medium=hellobar" +
-    "&utm_campaign=am-bot-instagram-leads-jul25&utm_term=cta",
+    "&utm_campaign=am-bot-instagram-leads-jul25&utm_term=cta&page=conversaciones",
   openInNewTab: true,
 
   imageUrl:
