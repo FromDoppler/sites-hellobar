@@ -6,15 +6,15 @@ const HELLOBAR_CONFIG = {
   style: "doppler", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
 
   content: {
-    title: "💬 ¡Nuevo Chatbot para tus comentarios de Instagram!",
+    title: "🚨 ¡Cuenta regresiva para el EMMS Digital Trends 2025!",
     description:
-      "Automatiza respuestas, gana tiempo y capta Leads sin esfuerzo.",
+      "Asegura tu lugar en el evento de Marketing Digital más esperado.",
   },
 
-  ctaText: "ACTÍVALO AHORA",
+  ctaText: "Inscríbete aquí",
   ctaUrl:
-    "https://app.fromdoppler.com/signup?utm_source=fromdoppler&utm_medium=hellobar" +
-    "&utm_campaign=am-bot-instagram-leads-jul25&utm_term=cta&page=conversaciones",
+    "https://goemms.com/digital-trends?utm_source=fromdoppler&utm_medium=hellobar" +
+    "&utm_campaign=cw-emmsdt25-invitacion-ago25&utm_term=Cta",
   openInNewTab: true,
 
   imageUrl:
