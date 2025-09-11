@@ -3,7 +3,7 @@ import "./hellobar.css";
 const SHOW_HELLOBAR = true; //poner en false para quitar la hellobar de todos los sitios
 
 const HELLOBAR_CONFIG = {
-  style: "doppler", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
+  style: "emms", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
 
   content: {
     title: "🚨 ¡Cuenta regresiva para el EMMS Digital Trends 2025!",
