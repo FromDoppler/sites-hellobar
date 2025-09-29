@@ -6,15 +6,15 @@ const HELLOBAR_CONFIG = {
   style: "emms", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
 
   content: {
-    title: "🚨 ¡Cuenta regresiva para el EMMS Digital Trends 2025!",
+    title: "⏳ ¡Cada vez falta menos!",
     description:
-      "Asegura tu lugar en el evento de Marketing Digital más esperado.",
+      "Regístrate al EMMS Digital Trends 2025 y revoluciona tu Marketing.",
   },
 
-  ctaText: "Inscríbete aquí",
+  ctaText: "RESERVA TU LUGAR",
   ctaUrl:
     "https://goemms.com/digital-trends?utm_source=fromdoppler&utm_medium=hellobar" +
-    "&utm_campaign=cw-emmsdt25-invitacion-ago25&utm_term=Cta",
+    "&utm_campaign=emmsdt25-invitacion-sep25&utm_term=Cta",
   openInNewTab: true,
 
   imageUrl:
@@ -99,7 +99,7 @@ const createHelloBar = (config = HELLOBAR_CONFIG) => {
 
   const p = generatePTag(pLines.join(" "));
 
-  const btn = generateButtonTag(config.ctaText);
+  const btn = generateButtonTag(config.ctaText, "long");
   const header = document.querySelector("header");
   div.appendChild(img);
   div.appendChild(p);
