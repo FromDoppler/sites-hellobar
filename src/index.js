@@ -6,15 +6,15 @@ const HELLOBAR_CONFIG = {
   style: "emms", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
 
   content: {
-    title: "⏳ ¡Cada vez falta menos!",
+    title: "⏳ ¡Ya llega el EMMS Digital Trends 2025!",
     description:
-      "Regístrate al EMMS Digital Trends 2025 y revoluciona tu Marketing.",
+      "Conecta con las figuras que están definiendo el futuro del Marketing.",
   },
 
   ctaText: "RESERVA TU LUGAR",
   ctaUrl:
     "https://goemms.com/digital-trends?utm_source=fromdoppler&utm_medium=hellobar" +
-    "&utm_campaign=emmsdt25-invitacion-sep25&utm_term=Cta",
+    "&utm_campaign=cm-emmsdt25-previa-invitacion-Oct25&utm_term=Cta",
   openInNewTab: true,
 
   imageUrl:
