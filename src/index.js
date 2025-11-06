@@ -1,6 +1,6 @@
 import "./hellobar.css";
 
-const SHOW_HELLOBAR = false; //poner en false para quitar la hellobar de todos los sitios
+const SHOW_HELLOBAR = true; //poner en false para quitar la hellobar de todos los sitios
 
 const HELLOBAR_CONFIG = {
   style: "emms", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
