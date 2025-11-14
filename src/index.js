@@ -3,19 +3,17 @@ import "./hellobar.css";
 const SHOW_HELLOBAR = true; //poner en false para quitar la hellobar de todos los sitios
 
 const HELLOBAR_CONFIG = {
-  style: "emms", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
+  style: "doppler", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
 
   content: {
-    title: "🎥",
-    description:
-      "Revive las conferencias del EMMS Digital Trends 2025 y descubre" +
-      " las ideas que marcaron el futuro del Marketing.",
+    title: "🎄 ¡Prepárate para vender más en Navidad! ",
+    description: "Planifica tu Estrategia en el próximo Seminario Web.",
   },
 
-  ctaText: "ACCEDE AQUÍ",
+  ctaText: "INSCRÍBETE GRATIS",
   ctaUrl:
-    "https://goemms.com/digital-trends?utm_source=fromdoppler&utm_medium=hellobar" +
-    "&utm_campaign=cw-emmsdt25-post-revive-conferencias-invitacion-Nov25&utm_term=cta",
+    "https://evento.fromdoppler.com/webinar-navidad-2025?utm_source=fromdoppler&utm_medium=hellobar" +
+    "&utm_campaign=cw-webinar-navidad-invitacion-Nov25&utm_term=Cta",
   openInNewTab: true,
 
   imageUrl:
