@@ -7,8 +7,7 @@ const HELLOBAR_CONFIG = {
 
   content: {
     title: "🎄 ¡Prepárate para vender más en Navidad! ",
-    description:
-      "Planifica tu Estrategia en el próximo Seminario Web."
+    description: "Planifica tu Estrategia en el próximo Seminario Web.",
   },
 
   ctaText: "INSCRÍBETE GRATIS",
