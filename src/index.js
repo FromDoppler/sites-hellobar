@@ -7,7 +7,8 @@ const HELLOBAR_CONFIG = {
 
   content: {
     title: "👀",
-    description: "Atención cuentas nuevas: 50%OFF en planes o 3x1 en créditos. Usa el código DOPP50OFF% ¡Aprovecha antes de fin de año!",
+    description:
+      "Atención cuentas nuevas: 50%OFF en planes o 3x1 en créditos. Usa el código DOPP50OFF% ¡Aprovecha antes de fin de año!",
   },
 
   ctaText: "ACCEDE AL DESCUENTO",
