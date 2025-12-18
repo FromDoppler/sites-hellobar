@@ -1,19 +1,20 @@
 import "./hellobar.css";
 
-const SHOW_HELLOBAR = false; //poner en false para quitar la hellobar de todos los sitios
+const SHOW_HELLOBAR = true; //poner en false para quitar la hellobar de todos los sitios
 
 const HELLOBAR_CONFIG = {
   style: "doppler", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
 
   content: {
-    title: "🎄 ¡Prepárate para vender más en Navidad! ",
-    description: "Planifica tu Estrategia en el próximo Seminario Web.",
+    title: "👀",
+    description:
+      "Atención cuentas nuevas: 50%OFF en planes o 3x1 en créditos. Usa el código " +
+      "DOPP50OFF% ¡Aprovecha antes de fin de año!",
   },
 
-  ctaText: "INSCRÍBETE GRATIS",
+  ctaText: "ACCEDE AL DESCUENTO",
   ctaUrl:
-    "https://evento.fromdoppler.com/webinar-navidad-2025?utm_source=fromdoppler&utm_medium=hellobar" +
-    "&utm_campaign=cw-webinar-navidad-invitacion-Nov25&utm_term=Cta",
+    "https://app.fromdoppler.com/plan-selection/premium/by-contacts?PromoCode=DOPP50OFF%",
   openInNewTab: true,
 
   imageUrl:
