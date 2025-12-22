@@ -8,8 +8,8 @@ const HELLOBAR_CONFIG = {
   content: {
     title: "👀",
     description:
-      "Atención cuentas nuevas: 50%OFF en planes o 3x1 en créditos. Usa el código " +
-      "DOPP50OFF% ¡Aprovecha antes de fin de año!",
+      "Descuento exclusivo en Doppler: 50%OFF en planes o 3x1 en créditos " +
+      "para cuentas nuevas. Usa el código DOPP50OFF%",
   },
 
   ctaText: "ACCEDE AL DESCUENTO",
