@@ -3,18 +3,19 @@ import "./hellobar.css";
 const SHOW_HELLOBAR = true; //poner en false para quitar la hellobar de todos los sitios
 
 const HELLOBAR_CONFIG = {
-  style: "emms", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
+  style: "doppler", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
 
   content: {
-    title: "🚨 ¡Estamos en el EMMS Digital Trends 2025!",
+    title: "¿Cuenta nueva? 👀 ",
     description:
-      "Súmate al evento de Marketing más esperado del 28 al 30 de octubre",
+      "Descuento exclusivo en Doppler: 50%OFF en planes o 3x1 en créditos " +
+      "para cuentas nuevas. Usa el código DOPPLER",
   },
 
-  ctaText: "REGÍSTRATE AQUÍ",
+  ctaText: "ACTÍVALO HOY",
   ctaUrl:
-    "https://goemms.com/digital-trends?utm_source=fromdoppler&utm_medium=hellobar" +
-    "&utm_campaign=cm-emmsdt25-en-vivo-invitacion-Oct25&utm_term=Cta",
+    "https://app.fromdoppler.com/plan-selection/premium/by-contacts?PromoCode=DOPPLER" +
+    "&page=promocode2",
   openInNewTab: true,
 
   imageUrl:
