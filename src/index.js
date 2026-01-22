@@ -6,13 +6,13 @@ const HELLOBAR_CONFIG = {
   style: "doppler", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
 
   content: {
-    title: "👀",
+    title: "¿Cuenta nueva? 👀 ",
     description:
       "Descuento exclusivo en Doppler: 50%OFF en planes o 3x1 en créditos " +
       "para cuentas nuevas. Usa el código DOPPLER",
   },
 
-  ctaText: "ACCEDE AL DESCUENTO",
+  ctaText: "ACTÍVALO HOY",
   ctaUrl:
     "https://app.fromdoppler.com/plan-selection/premium/by-contacts?PromoCode=DOPPLER" +
     "&page=promocode2",
