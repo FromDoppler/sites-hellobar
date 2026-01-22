@@ -78,7 +78,6 @@ const generateButtonTag = (buttonContent, size = "medium") => {
 
   const validSizes = ["small", "medium", "long"];
   btn.classList.add(validSizes.includes(size) ? size : "medium");
-
   btn.innerHTML = buttonContent;
   return btn;
 };
