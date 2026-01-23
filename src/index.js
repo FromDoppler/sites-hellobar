@@ -15,7 +15,7 @@ const HELLOBAR_CONFIG = {
   ctaText: "ACTÍVALO HOY",
   ctaUrl:
     "https://app.fromdoppler.com/plan-selection/premium/by-contacts?PromoCode=DOPPLER" +
-    "&page=promocode2",
+    "2026&page=promocode2",
   openInNewTab: true,
 
   imageUrl:
