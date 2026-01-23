@@ -14,8 +14,8 @@ const HELLOBAR_CONFIG = {
 
   ctaText: "ACTÍVALO HOY",
   ctaUrl:
-    "https://app.fromdoppler.com/plan-selection/premium/by-contacts?PromoCode=DOPPLER" +
-    "&page=promocode2",
+    "https://app.fromdoppler.com/plan-selection/premium/by-contacts?PromoCode=" +
+    "DOPPLER2026&page=promocode2",
   openInNewTab: true,
 
   imageUrl:
@@ -78,7 +78,6 @@ const generateButtonTag = (buttonContent, size = "medium") => {
 
   const validSizes = ["small", "medium", "long"];
   btn.classList.add(validSizes.includes(size) ? size : "medium");
-
   btn.innerHTML = buttonContent;
   return btn;
 };
