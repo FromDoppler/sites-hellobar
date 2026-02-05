@@ -85,19 +85,25 @@ pipeline {
                         '''
                     }
                 }
-                stage('Publish final version images') {
+                stage('Publish final version images (latest or tag)') {
                     when {
-                        expression {
-                            return isVersionTag(readCurrentTag())
+                        anyOf {
+                            branch 'main'
+                            expression { return isVersionTag(readCurrentTag()) }
                         }
                     }
                     steps {
-                        sh '''
-                        sh build-n-publish.sh \
-                            --package=${PKG_NAME} \
-                            --commit=${GIT_COMMIT} \
-                            --version=${TAG_NAME}
-                        '''
+                        script {
+                            def tag = readCurrentTag()
+                            def version = isVersionTag(tag) ? tag : 'latest'
+
+                            sh """
+                            sh build-n-publish.sh \
+                                --package=${PKG_NAME} \
+                                --commit=${GIT_COMMIT} \
+                                --version=${version}
+                            """
+                        }
                     }
                 }
             }
