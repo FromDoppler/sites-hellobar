@@ -7,8 +7,7 @@ const HELLOBAR_CONFIG = {
 
   content: {
     title: "¿Tienes una cuenta gratuita? 👀",
-    description:
-      " Activa tu plan con 50% OFF durante los primeros 6 meses."
+    description: " Activa tu plan con 50% OFF durante los primeros 6 meses.",
   },
 
   ctaText: "ACTÍVALO HOY",
