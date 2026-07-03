@@ -6,22 +6,22 @@ const HELLOBAR_CONFIG = {
   style: "doppler", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
 
   content: {
-    title: "¿Tienes una cuenta gratuita? 👀",
-    description:
-      " Activa tu plan con 50% OFF en Planes de hasta 1500 Contactos" +
-      " durante los primeros 6 meses.",
+    title: "🤖 Demo Day Especial:",
+    description: " Aprende a automatizar Conversaciones y a activar Agentes IA",
   },
 
-  ctaText: "ACTÍVALO HOY",
+  ctaText: "INSCRÍBETE GRATIS",
   ctaUrl:
-    "https://app.fromdoppler.com/login?lang=es&page=beneficios-email-marketing",
+    "https://evento.fromdoppler.com/dopplerdemoday-julio/" +
+    "?utm_source=fromdoppler&utm_medium=hellobar" +
+    "&utm_campaign=cw-demo-day-invitacion-Jun26&utm_term=cta",
   openInNewTab: true,
 
   imageUrl:
     "https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/" +
     "asset-demoday.png", // TODO: cambiar de QA a prod
-  imageAlt: "Chatbot Instagram",
-  imageTitle: "Chatbot Instagram",
+  imageAlt: "Demo Day Especial",
+  imageTitle: "Demo Day Especial",
 };
 
 const generateAnchorTag = (url, shouldOpenInNewTab = true) => {
