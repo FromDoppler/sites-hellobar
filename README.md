@@ -20,3 +20,19 @@ It is for the "hello bar" or "sticky bar" you use on all fromdoppler sites.
     1.  https://cdn.fromdoppler.com/doppler-sites-hellobar/asset-manifest-v1.json
     1.  https://cdn.fromdoppler.com/doppler-sites-hellobar/asset-manifest-v1.2.json
     1.  https://cdn.fromdoppler.com/doppler-sites-hellobar/asset-manifest-v1.2.3.json
+
+## CDN cleanup during deployment
+
+The Jenkins publishing pipeline runs a CDN cleanup after uploading mutable packages such as `main`,
+`INT`, and pull request builds. If the pipeline needs to run faster or the cleanup has to be skipped
+temporarily, pass `--skip-clean` to `build-n-publish.sh`.
+
+Example:
+
+```sh
+sh build-n-publish.sh \
+    --package=${PKG_NAME} \
+    --commit=${GIT_COMMIT} \
+    --name=main \
+    --skip-clean
+```
