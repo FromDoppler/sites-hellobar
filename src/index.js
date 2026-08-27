@@ -1,27 +1,25 @@
 import "./hellobar.css";
 
-const SHOW_HELLOBAR = false; //poner en false para quitar la hellobar de todos los sitios
+const SHOW_HELLOBAR = true; //poner en false para quitar la hellobar de todos los sitios
 
 const HELLOBAR_CONFIG = {
   style: "doppler", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
 
   content: {
-    title: "🤖 Demo Day Especial:",
-    description: " Aprende a automatizar Conversaciones y a activar Agentes IA",
+    title: "🚨 ¡Cuenta regresiva para el EMMS 2026!",
+    description:
+      " Inscríbete al evento más grande de Marketing Digital y descubre tendencias de la mano de expertos",
   },
 
-  ctaText: "INSCRÍBETE GRATIS",
+  ctaText: "RESERVA TU LUGAR",
   ctaUrl:
-    "https://evento.fromdoppler.com/dopplerdemoday-julio/" +
-    "?utm_source=fromdoppler&utm_medium=hellobar" +
-    "&utm_campaign=cw-demo-day-invitacion-Jun26&utm_term=cta",
+    "https://goemms.com/?utm_source=fromdoppler&utm_medium=hellobar" +
+    "&utm_campaign=cw-emms-26-cuentaregresiva-invitacion&utm_term=cta",
   openInNewTab: true,
 
-  imageUrl:
-    "https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/" +
-    "asset-demoday.png", // TODO: cambiar de QA a prod
-  imageAlt: "Demo Day Especial",
-  imageTitle: "Demo Day Especial",
+  imageUrl: null,
+  imageAlt: "",
+  imageTitle: "",
 };
 
 const generateAnchorTag = (url, shouldOpenInNewTab = true) => {
@@ -85,11 +83,9 @@ const createHelloBar = (config = HELLOBAR_CONFIG) => {
   const a = generateAnchorTag(config.ctaUrl, config.openInNewTab);
 
   const div = generateDivTag(config.style);
-  const img = generateImgTag(
-    config.imageUrl,
-    config.imageAlt,
-    config.imageTitle,
-  );
+  const img = config.imageUrl
+    ? generateImgTag(config.imageUrl, config.imageAlt, config.imageTitle)
+    : null;
 
   const pLines = [
     `<strong>${config.content.title}</strong>`,
@@ -100,7 +96,7 @@ const createHelloBar = (config = HELLOBAR_CONFIG) => {
 
   const btn = generateButtonTag(config.ctaText, "long");
   const header = document.querySelector("header");
-  div.appendChild(img);
+  if (img) div.appendChild(img);
   div.appendChild(p);
   div.appendChild(btn);
   a.appendChild(div);

@@ -13,7 +13,7 @@ describe("Test in index.js", () => {
 
     expect(document.querySelector("header div")).toBeTruthy();
     expect(document.querySelector("header a ")).toBeTruthy();
-    expect(document.querySelector("header img")).toBeTruthy();
+    expect(document.querySelector("header img")).toBeNull();
     expect(document.querySelector("header p")).toBeTruthy();
     expect(document.querySelector("header button")).toBeTruthy();
   });
@@ -21,12 +21,6 @@ describe("Test in index.js", () => {
   test("Test to verify that the href exists in the a tag of the hellobar", () => {
     expect(
       document.querySelector("header a ").getAttribute("href"),
-    ).toBeTruthy();
-  });
-
-  test("Test for the existence of an alternative text in the image", () => {
-    expect(
-      document.querySelector("header img ").getAttribute("alt"),
     ).toBeTruthy();
   });
 });
