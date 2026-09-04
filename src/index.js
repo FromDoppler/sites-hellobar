@@ -3,7 +3,7 @@ import "./hellobar.css";
 const SHOW_HELLOBAR = true; //poner en false para quitar la hellobar de todos los sitios
 
 const HELLOBAR_CONFIG = {
-  style: "doppler", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
+  style: "emms", // "doppler"(amarillo), "academy"(violeta), "emms"(morado oscuro)
 
   content: {
     title: "🚨 ¡Cuenta regresiva para el EMMS 2026!",
@@ -13,8 +13,8 @@ const HELLOBAR_CONFIG = {
 
   ctaText: "RESERVA TU LUGAR",
   ctaUrl:
-    "https://goemms.com/?utm_source=fromdoppler&utm_medium=hellobar" +
-    "&utm_campaign=cw-emms-26-cuentaregresiva-invitacion&utm_term=cta",
+    "https://goemms.com/?utm_source=fromdoppler&utm_medium=partners" +
+    "&utm_campaign=emms-26-doppler-academy-hello-bar-cuentaregresiva-sep-26",
   openInNewTab: true,
 
   imageUrl: null,
